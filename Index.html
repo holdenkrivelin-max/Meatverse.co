@@ -54,6 +54,8 @@
     body.dark-mode .mode-toggle { border-color: rgba(247,243,236,0.2); color: var(--cream); }
 
     nav{position:fixed;top:0;left:0;right:0;z-index:210;background:var(--cream);border-bottom:1px solid var(--border-color);padding:14px 32px;display:flex;align-items:center;justify-content:space-between;transition:background-color .3s ease;}
+    .nav-links{display:flex;align-items:center;gap:16px;}
+    @media(min-width:900px){ .nav-links{ gap: 40px; } }
     body{padding-top:76px;}
     .nav-new-here{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);border-radius:14px;padding:5px 14px;background:none;cursor:pointer;font-family:'Jost',sans-serif;font-weight:500;}
     .nav-drop{position:relative;display:inline-block;}
