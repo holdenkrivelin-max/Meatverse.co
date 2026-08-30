@@ -225,6 +225,8 @@
         <button class="nav-drop-subitem" onclick="document.getElementById('full-ecosystem').scrollIntoView({behavior:'smooth'})">Full Ecosystem</button>
         <button class="nav-drop-subitem" onclick="document.getElementById('meat-expand').scrollIntoView({behavior:'smooth'})">MEAT Expand</button>
         <button class="nav-drop-subitem" onclick="document.getElementById('meat-media').scrollIntoView({behavior:'smooth'})">MEAT Media</button>
+        <button class="nav-drop-subitem" onclick="document.getElementById('meat-label').scrollIntoView({behavior:'smooth'})">MEAT Label</button>
+        <button class="nav-drop-subitem" onclick="document.getElementById('red-label').scrollIntoView({behavior:'smooth'})">Red Label</button>
       </div>
     </details>
 
@@ -283,6 +285,8 @@
   <a href="javascript:void(0)" onclick="closeMvMobileNav(); document.getElementById('full-ecosystem').scrollIntoView({behavior:'smooth'})">Full Ecosystem</a>
   <a href="javascript:void(0)" onclick="closeMvMobileNav(); document.getElementById('meat-expand').scrollIntoView({behavior:'smooth'})">MEAT Expand</a>
   <a href="javascript:void(0)" onclick="closeMvMobileNav(); document.getElementById('meat-media').scrollIntoView({behavior:'smooth'})">MEAT Media</a>
+  <a href="javascript:void(0)" onclick="closeMvMobileNav(); document.getElementById('meat-label').scrollIntoView({behavior:'smooth'})">MEAT Label</a>
+  <a href="javascript:void(0)" onclick="closeMvMobileNav(); document.getElementById('red-label').scrollIntoView({behavior:'smooth'})">Red Label</a>
 
   <p class="mobile-nav-label">About</p>
   <a href="javascript:void(0)" onclick="closeMvMobileNav(); document.getElementById('what-is').scrollIntoView({behavior:'smooth'})">What Is MEATverse</a>
@@ -1075,7 +1079,38 @@ function closeMvMobileNav(){
     </div>
 
     <p style="font-size:13.5px;color:var(--dark);opacity:0.72;line-height:1.8;max-width:580px;margin:0 auto 8px;text-align:center;"><strong style="color:var(--dark);opacity:1;">MEAT Life</strong> is the everyday human-interest side of MEAT Media, while <strong style="color:var(--dark);opacity:1;">MEAT Media</strong> itself is the larger studio and publishing umbrella.</p>
-    <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:16px;color:var(--gold);text-align:center;margin-bottom:36px;">Stories people can sink their teeth into.</p>
+    <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:16px;color:var(--gold);text-align:center;margin-bottom:28px;">Stories people can sink their teeth into.</p>
+
+    <div style="max-width:520px;margin:0 auto 32px;padding:24px 26px;background:var(--dark);text-align:left;">
+      <p style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--cream);opacity:0.7;margin-bottom:10px;text-align:center;">MEAT Media Structure</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;color:var(--cream);margin-bottom:12px;text-align:center;">MEAT Media</p>
+      <p style="font-size:13px;color:var(--cream);opacity:0.8;line-height:1.9;text-align:center;">→ MEAT Life<br/>→ <strong style="color:var(--cream);">MEAT Radio</strong><br/>→ <strong style="color:var(--cream);">MEAT Label</strong><br/>→ Films / Shows<br/>→ Interviews<br/>→ Community Stories<br/>→ Event Coverage</p>
+    </div>
+
+    <p style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:6px;">MEAT Radio</p>
+    <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:16px;color:var(--dark);line-height:1.6;margin-bottom:10px;">Sharing the stories of today and the Meaties of tomorrow.</p>
+    <p style="font-size:13px;color:var(--dark);opacity:0.75;line-height:1.85;max-width:560px;margin:0 auto 14px;">A home for conversations, interviews, audio stories, live discussions, music and culture programming, founder stories, community submissions, and voices people may not know yet but should.</p>
+    <p style="font-size:12.5px;color:var(--dark);opacity:0.72;line-height:1.8;max-width:560px;margin:0 auto 32px;">MEAT Radio can discover people before everyone else does — "Meaties of tomorrow" gives it a future-facing identity, not just another podcast.</p>
+
+    <p id="meat-label" style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:6px;">MEAT Label</p>
+    <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:16px;color:var(--dark);line-height:1.6;margin-bottom:10px;">Discovering and elevating the creators of tomorrow.</p>
+    <p style="font-size:13px;color:var(--dark);opacity:0.75;line-height:1.85;max-width:560px;margin:0 auto 8px;">Not just a record label — the talent-and-creator umbrella for people who have something worth showing but need a platform and community around them.</p>
+    <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:13.5px;color:var(--gold);margin-bottom:14px;">You don't have to already be known to deserve to be seen.</p>
+    <p style="font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);text-align:center;margin-bottom:14px;">Influencers · Streamers · Filmmakers · Photographers · Podcasters · Writers · Social Creators · Actors · Visual Artists · Performers</p>
+    <p style="font-size:12.5px;color:var(--dark);opacity:0.72;line-height:1.8;max-width:560px;margin:0 auto 20px;">Submit work, get featured, collaborate, perform, appear in MEAT Media projects, get heard on MEAT Radio, and potentially reach the wider MEAT community.</p>
+
+    <div id="red-label" style="max-width:440px;margin:0 auto 28px;padding:26px 28px;background:#7A1F1F;text-align:center;">
+      <p style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,243,236,0.75);margin-bottom:12px;">A MEAT Label Division</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:24px;letter-spacing:.04em;color:#F7F3EC;margin-bottom:12px;">RED LABEL</p>
+      <p style="font-size:13px;color:rgba(247,243,236,0.85);line-height:1.75;margin-bottom:12px;">Discovering, developing, and showcasing the musicians of tomorrow.</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:13.5px;color:#F7F3EC;">Discovering the Meaties of tomorrow.</p>
+    </div>
+
+    <div style="max-width:520px;margin:0 auto 32px;padding:24px 26px;background:var(--dark);">
+      <p style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--cream);opacity:0.7;margin-bottom:12px;text-align:center;">The Creative Structure</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:13.5px;color:var(--cream);line-height:1.9;text-align:center;">MEAT Label — creators and emerging talent.<br/>Red Label — musicians specifically.<br/>MEAT Media — distributes and tells the stories.<br/>MEAT Radio — gives voices and music another channel.</p>
+      <p style="font-size:12px;color:var(--cream);opacity:0.65;line-height:1.75;margin-top:16px;text-align:center;">Someone gets discovered through MEAT Label, featured through MEAT Media, interviewed on MEAT Radio, and potentially grows into a larger role inside the ecosystem.</p>
+    </div>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:rgba(44,58,40,0.12);border:1px solid rgba(44,58,40,0.12);text-align:left;margin-bottom:20px;">
       <div style="background:var(--cream);padding:20px 22px;">
