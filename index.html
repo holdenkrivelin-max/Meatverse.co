@@ -71,13 +71,23 @@
     body.dark-mode .nav-logo { color: var(--cream); }
     .nav-logo strong { color: #E8C66B; }
     .nav-controls { display: flex; gap: 16px; align-items: center; }
-    .mode-toggle { background: none; border: 1px solid var(--border-color); color: var(--cream); padding: 8px 12px; font-size: 14px; cursor: pointer; border-radius: 4px; font-family: 'Jost', sans-serif; font-weight: 600; transition: all 0.3s ease; }
+    .mode-toggle { background: none; border: 1px solid rgba(247,243,236,0.3); color: #F7F3EC; padding: 8px 12px; font-size: 14px; cursor: pointer; border-radius: 4px; font-family: 'Jost', sans-serif; font-weight: 600; transition: all 0.3s ease; }
     body.dark-mode .mode-toggle { border-color:rgba(247,243,236,0.62); color: var(--cream); }
 
-    nav{position:fixed;top:0;left:0;right:0;z-index:210;background:rgba(44,58,40,0.98);border-bottom:1px solid var(--border-color);padding:14px 32px;display:flex;align-items:center;justify-content:space-between;transition:background-color .3s ease;}
+    nav{position:fixed;top:0;left:0;right:0;z-index:210;background:rgba(44,58,40,0.98);border-bottom:1px solid var(--border-color);padding:12px 20px 14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;transition:background-color .3s ease;}
+    .nav-corner-brand{position:absolute;top:12px;left:18px;opacity:.85;}
+    .nav-corner-brand img{height:24px;width:24px;object-fit:contain;}
+    .nav-utils{position:absolute;top:10px;right:14px;display:flex;align-items:center;gap:8px;}
+    .nav-center{display:flex;flex-direction:column;align-items:center;gap:0;}
+    .nav-center-m{height:32px;width:32px;object-fit:contain;margin-bottom:3px;}
+    .nav-center-name{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;letter-spacing:.05em;color:#F7F3EC;text-align:center;margin:0 0 14px 0;line-height:1.15;}
+    .nav-center-name strong{color:#E8C66B;font-weight:400;}
+    .nav-main-menu-btn{margin-top:0;margin-bottom:26px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#F7F3EC;background:none;border:1px solid rgba(247,243,236,0.3);padding:6px 18px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:6px;font-family:'Jost',sans-serif;font-weight:500;transition:border-color .2s,color .2s;}
+    .nav-main-menu-btn:hover{border-color:#E8C66B;color:#E8C66B;}
+    .nav-main-menu-btn:after{content:'';width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid #E8C66B;display:inline-block;margin-left:2px;}
+    body{padding-top:150px;}
     .nav-links{display:flex;align-items:center;gap:16px;}
     @media(min-width:900px){ .nav-links{ gap: 40px; } }
-    body{padding-top:76px;}
     .nav-new-here{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#E8C66B;border:1px solid #E8C66B;border-radius:14px;padding:5px 14px;background:none;cursor:pointer;font-family:'Jost',sans-serif;font-weight:500;}
     .nav-drop{position:relative;display:inline-block;}
     .nav-drop>summary{list-style:none;cursor:pointer;font-size:13px;color:var(--cream);font-weight:500;font-family:'Jost',sans-serif;display:flex;align-items:center;gap:4px;}
@@ -110,10 +120,12 @@
       nav{padding:14px 20px;}
     }
     
-    .hero { padding: 120px var(--spacing-base) 100px; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; }
+    .hero { padding: 40px var(--spacing-base) 100px; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; }
     .hero-eyebrow { font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: #E8C66B; margin-bottom: 20px; font-weight: 600; }
+    body.light-mode .hero-eyebrow { color: #7A5F0F; }
     .hero-main { font-family: 'Cormorant Garamond', serif; font-size: clamp(44px, 9vw, 80px); font-weight: 300; letter-spacing: 0.02em; margin-bottom: 16px; line-height: 1.1; color: var(--cream); }
     .hero-main em { font-style: italic; color: #E8C66B; }
+    body.light-mode .hero-main em { color: #7A5F0F; }
     .hero-body { font-size: 16px; color: var(--muted); max-width: 700px; margin: 0 auto 40px; line-height: 1.85; }
     
     .section { padding: 100px var(--spacing-base); border-top: 1px solid var(--border-color); }
@@ -122,6 +134,7 @@
     .container { max-width: 1000px; margin: 0 auto; }
     
     .section-eyebrow { font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: #E8C66B; margin-bottom: 20px; font-weight: 600; }
+    body.light-mode .section-eyebrow { color: #7A5F0F; }
     .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 6vw, 60px); font-weight: 300; margin-bottom: 28px; line-height: 1.2; letter-spacing: 0.02em; }
     .section.dark .section-title { color: var(--cream); }
     .section-desc { font-size: 15px; color: var(--muted); margin-bottom: 32px; line-height: 1.85; max-width: 700px; }
@@ -129,12 +142,14 @@
     
     .mission-block { background: white; color: var(--dark); padding: 40px; border-radius: 6px; border: 1px solid var(--border-color); margin: 40px 0; }
     body.dark-mode .mission-block { background: #2a2a2a; color: #f0f0f0; }
+    body.light-mode .mission-block { color: #2C3A28; }
     .mission-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; margin-bottom: 12px; }
     .mission-text { font-size: 14px; color: var(--muted); line-height: 1.8; }
     
     .initiative-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin: 60px 0; }
     .initiative-card { background: white; color: var(--dark); padding: 32px; border-radius: 6px; border: 1px solid var(--border-color); cursor: pointer; transition: all 0.3s ease; }
     body.dark-mode .initiative-card { background: #2a2a2a; color: #f0f0f0; }
+    body.light-mode .initiative-card { color: #2C3A28; }
     .initiative-card:hover { transform: translateY(-4px); }
     .initiative-icon { font-size: 40px; margin-bottom: 12px; }
     .initiative-status { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #7A5F0F; font-weight: 600; margin-bottom: 8px; }
@@ -161,6 +176,7 @@
     }
     .footer-empire-label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;opacity:.7;margin-bottom:8px;}
     .footer-empire-title{font-size:16px;font-weight:600;color:#E8C66B;text-decoration:none;display:inline-block;margin-bottom:8px;}
+    body.light-mode .footer-empire-title{color:#7A5F0F;}
     .footer-empire-desc{font-size:13px;opacity:.75;line-height:1.6;max-width:280px;margin:0 auto;}
     @media(min-width:769px){
       .footer-empire-callout{
@@ -173,8 +189,14 @@
     .social-links a:hover { color: #E8C66B; }
     
     @media(max-width: 768px) {
-      nav { padding: 12px 24px; }
-      .hero { padding: 60px 24px 50px; }
+      nav { padding: 10px 16px 12px; }
+      .nav-corner-brand{top:10px !important;left:12px !important;}
+      .nav-corner-brand img{height:18px !important;width:18px !important;}
+      .nav-utils{top:9px !important;right:10px !important;}
+      .nav-center-m{height:26px !important;width:26px !important;}
+      .nav-center-name{font-size:15px !important;}
+      .nav-main-menu-btn{font-size:9.5px !important;padding:5px 14px !important;}
+      .hero { padding: 32px 24px 50px; }
       .section { padding: 60px 24px; }
       .initiative-grid { grid-template-columns: 1fr; }
       .pathway-card { padding: 28px 22px; }
@@ -200,18 +222,22 @@
     body.dark-mode .pathway-items { color:var(--cream); }
     .pathway-center { text-align:center; margin:0 auto 8px; }
     .pathway-center-mark { display:inline-block; width:64px; height:64px; border-radius:50%; border:2px solid var(--gold); display:flex; align-items:center; justify-content:center; font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:600; color:#E8C66B; }
+    body.light-mode .pathway-center-mark { color:#7A5F0F; }
 
     /* ── PERSONA CARDS ── */
     .persona-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:24px; margin-top:48px; }
     .persona-card { background:white; color:var(--dark); border:1px solid var(--border-color); padding:30px 26px; text-align:left; }
     body.dark-mode .persona-card { background:#2a2a2a; }
+    body.light-mode .persona-card { color:#2C3A28; }
     .persona-name { font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:500; color:var(--dark); margin-bottom:4px; }
     body.dark-mode .persona-name { color:var(--cream); }
+    body.light-mode .persona-name { color:#2C3A28; }
     .persona-tag { font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:#7A5F0F; font-weight:600; margin-bottom:16px; }
     body.dark-mode .persona-tag { color:#E8C66B; }
     .persona-row { font-size:12.5px; color:var(--muted); line-height:1.9; margin-bottom:6px; }
     .persona-row strong { color:var(--dark); font-weight:600; }
     body.dark-mode .persona-row strong { color:var(--cream); }
+    body.light-mode .persona-row strong { color:#2C3A28; }
 
     /* ── FINAL YOU MAP ── */
     .you-map { max-width:640px; margin:48px auto 0; text-align:center; }
@@ -225,71 +251,18 @@
 <div class="progress-bar" id="progressBar"></div>
 
 <nav>
-  <a href="#" class="nav-logo" style="display:flex;align-items:center;gap:5px;">
-    <img src="meat-logo-gold.png" alt="MEATverse" style="height:32px;width:32px;object-fit:contain;"/>
-    MEAT<strong>Verse</strong>
+  <a class="nav-corner-brand" href="#" aria-label="MEATverse home">
+    <img src="meat-logo-gold.png" alt=""/>
   </a>
-  <div class="nav-links">
-    <button class="nav-new-here" onclick="document.getElementById('start-here').scrollIntoView({behavior:'smooth'})">New Here?</button>
+  <div class="nav-utils">
+    <button class="mode-toggle" onclick="toggleDarkMode()" id="modeBtn" style="padding:6px 10px;font-size:11px;">🌙 Dark</button>
+  </div>
 
-    <details class="nav-drop">
-      <summary>MEAT</summary>
-      <div class="nav-drop-menu">
-        <p class="nav-drop-subhead">Experiences</p>
-        <button class="nav-drop-subitem" onclick="document.getElementById('the-map').scrollIntoView({behavior:'smooth'})">MEAT Experiences</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('the-map').scrollIntoView({behavior:'smooth'})">Partner Events</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('ground-floor').scrollIntoView({behavior:'smooth'})">Chef Features</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('ground-floor').scrollIntoView({behavior:'smooth'})">MEAT at the Ground Floor</button>
-        <div class="nav-drop-divider"></div>
-        <p class="nav-drop-subhead">Features</p>
-        <button class="nav-drop-subitem" onclick="document.getElementById('meaties-place').scrollIntoView({behavior:'smooth'})">MEAT Social</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('meat-circles').scrollIntoView({behavior:'smooth'})">MEAT Circles</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('meatings').scrollIntoView({behavior:'smooth'})">MEATings</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('meat-next').scrollIntoView({behavior:'smooth'})">MEAT Next</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('meat-count').scrollIntoView({behavior:'smooth'})">MEAT Count</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('meat-moments').scrollIntoView({behavior:'smooth'})">MEAT Moments</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('meatchat').scrollIntoView({behavior:'smooth'})">MEATchat</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('meat-trends').scrollIntoView({behavior:'smooth'})">MEAT Trends</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('full-ecosystem').scrollIntoView({behavior:'smooth'})">Full Ecosystem</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('app-preview').scrollIntoView({behavior:'smooth'})">App Preview</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('meat-expand').scrollIntoView({behavior:'smooth'})">MEAT Expand</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('meat-media').scrollIntoView({behavior:'smooth'})">MEAT Media</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('meat-video').scrollIntoView({behavior:'smooth'})">MEAT Video</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('meat-label').scrollIntoView({behavior:'smooth'})">MEAT Label</button>
-        <button class="nav-drop-subitem" onclick="document.getElementById('red-label').scrollIntoView({behavior:'smooth'})">Red Label</button>
-      </div>
-    </details>
-
-    <details class="nav-drop">
-      <summary>About</summary>
-      <div class="nav-drop-menu">
-        <button onclick="document.getElementById('what-is').scrollIntoView({behavior:'smooth'})">What Is MEATverse</button>
-        <button onclick="document.getElementById('your-meatverse').scrollIntoView({behavior:'smooth'})">Your MEATverse</button>
-        <button onclick="document.getElementById('beyond-the-app').scrollIntoView({behavior:'smooth'})">Beyond the App</button>
-        <button onclick="document.getElementById('its-working').scrollIntoView({behavior:'smooth'})">It's Working</button>
-        <button onclick="document.getElementById('web-summit').scrollIntoView({behavior:'smooth'})">Web Summit 2026</button>
-        <button onclick="document.getElementById('meat-ecosystem-pillars').scrollIntoView({behavior:'smooth'})">The Seven Pillars</button>
-        <button onclick="document.getElementById('meat-manifesto').scrollIntoView({behavior:'smooth'})">The MEAT Manifesto</button>
-        <button onclick="document.getElementById('brand-philosophy').scrollIntoView({behavior:'smooth'})">Brand Philosophy</button>
-        <button onclick="document.getElementById('future-of-meating').scrollIntoView({behavior:'smooth'})">The Future of MEATing</button>
-        <button onclick="document.getElementById('roadmap').scrollIntoView({behavior:'smooth'})">The Roadmap</button>
-      </div>
-    </details>
-
-    <details class="nav-drop">
-      <summary>Build With MEAT</summary>
-      <div class="nav-drop-menu">
-        <a href="https://meatempire.net" target="_blank" rel="noopener" style="display:block;padding:10px 20px;font-size:12px;letter-spacing:.08em;color:var(--muted);text-decoration:none;font-family:'Jost',sans-serif;">MEAT Empire</a>
-        <button onclick="document.getElementById('participation').scrollIntoView({behavior:'smooth'})">Get More From Participation</button>
-      </div>
-    </details>
-
-    <a href="https://storemhg.com" target="_blank" rel="noopener" class="nav-shop-link">Shop</a>
-
-    <button class="mode-toggle" onclick="toggleDarkMode()" id="modeBtn">🌙 Dark</button>
-    <button class="nav-burger" aria-label="Open menu" onclick="document.getElementById('mobileNavPanel').classList.add('open');document.getElementById('mobileNavClose').classList.add('open');">
-      <span></span><span></span><span></span>
-    </button>
+  <div class="nav-center">
+    <img class="nav-center-m" src="meat-logo-gold.png" alt="MEATverse"/>
+    <p class="nav-center-name">MEAT<strong>Verse</strong></p>
+    <button class="nav-main-menu-btn" aria-label="Open menu" onclick="document.getElementById('mobileNavPanel').classList.add('open');document.getElementById('mobileNavClose').classList.add('open');">Menu</button>
+    <button class="btn-enter" style="margin-top:0;padding:9px 22px;font-size:11.5px;" onclick="document.getElementById('start-here').scrollIntoView({behavior:'smooth'})">Enter MEATverse ↓</button>
   </div>
 </nav>
 
@@ -344,30 +317,22 @@ function closeMvMobileNav(){
   document.getElementById('mobileNavPanel').classList.remove('open');
   document.getElementById('mobileNavClose').classList.remove('open');
 }
+
+// Keep page content clear of the fixed centered nav regardless of its
+// rendered height (which can vary slightly by font, zoom, or viewport).
 (function(){
-  var navDrops = document.querySelectorAll('details.nav-drop');
-  navDrops.forEach(function(drop){
-    drop.addEventListener('toggle', function(){
-      if(drop.open){
-        navDrops.forEach(function(other){ if(other !== drop) other.open = false; });
-      }
-    });
-    drop.querySelectorAll('.nav-drop-menu button, .nav-drop-menu a').forEach(function(btn){
-      btn.addEventListener('click', function(){ drop.open = false; });
-    });
-  });
-  document.addEventListener('click', function(e){
-    navDrops.forEach(function(drop){
-      if(drop.open && !drop.contains(e.target)) drop.open = false;
-    });
-  });
+  function syncNavHeight(){
+    var nav = document.querySelector('nav');
+    if(!nav) return;
+    document.body.style.paddingTop = nav.offsetHeight + 'px';
+  }
+  syncNavHeight();
+  window.addEventListener('resize', syncNavHeight);
+  window.addEventListener('load', syncNavHeight);
 })();
 </script>
 
 <div class="hero">
-  <div style="margin-bottom:24px;">
-    <img src="meat-logo-gold.png" alt="" style="height:80px;width:80px;object-fit:contain;opacity:0.92;"/>
-  </div>
   <p class="hero-eyebrow">Welcome to</p>
   <h1 class="hero-main" style="color:#F7F3EC;">MEAT<em>Verse</em></h1>
   <p class="hero-body">The connected world of MEAT.<br>Built around real people, real life, and real progress. 💚</p>
@@ -378,7 +343,7 @@ function closeMvMobileNav(){
   <p style="font-size:12.5px;color:#E8C66B;text-align:center;line-height:1.6;margin-top:10px;font-style:italic;">MEAT helps turn intention into movement.</p>
   <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:14px;color:var(--cream);text-align:center;margin-top:10px;">Don't just scroll through life. Go live it.</p>
   <p style="font-size:13px;color:var(--muted);text-align:center;line-height:1.7;margin-top:8px;max-width:440px;margin-left:auto;margin-right:auto;">MEAT helps people discover what matters, connect with the right people, go do something, and complete what they started.</p>
-  <button class="btn-enter" style="margin-top:20px;" onclick="document.getElementById('start-here').scrollIntoView({behavior:'smooth'})">Enter MEATverse →</button>
+  <button class="btn-enter" style="margin-top:20px;" onclick="document.getElementById('start-here').scrollIntoView({behavior:'smooth'})">Enter MEATverse ↓</button>
 </div>
 
 <!-- NEW HERE? START HERE -->
@@ -1529,7 +1494,7 @@ function closeMvMobileNav(){
     </div>
 
     <div style="text-align:center;margin-top:48px;">
-      <button class="btn-enter" onclick="document.getElementById('what-is').scrollIntoView({behavior:'smooth'})">Enter MEATverse →</button>
+      <button class="btn-enter" onclick="document.getElementById('what-is').scrollIntoView({behavior:'smooth'})">Enter MEATverse ↓</button>
     </div>
   </div>
 </div>
