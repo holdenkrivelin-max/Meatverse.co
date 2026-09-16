@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MEATVerse — Let's MEAT · The Expanding World of MEAT</title>
-  <meta name="description" content="MEATVerse is the expanding world of MEAT — a connected ecosystem that goes beyond the app to bring people closer to communities, experiences, opportunities, tools, and real-life progress.">
+  <title>MEATVerse — The Long-Term Vision for MEAT</title>
+  <meta name="description" content="MEATVerse is the long-term vision for how MEAT may grow from a practical daily app into a more connected world of people, ideas, and real-life opportunities.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%232C3A28'/%3E%3Ccircle cx='50' cy='50' r='46' fill='none' stroke='%237A9270' stroke-width='2'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-weight='bold' font-size='58' fill='%238FAF83' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E"/>
-  <meta property="og:title" content="MEATVerse — The Expanding World of MEAT"/>
-  <meta property="og:description" content="MEATVerse is the expanding world of MEAT — a connected ecosystem that goes beyond the app to bring people closer to communities, experiences, opportunities, tools, and real-life progress."/>
+  <meta property="og:title" content="MEATVerse — The Long-Term Vision for MEAT"/>
+  <meta property="og:description" content="See the long-term direction of MEAT, beginning with a practical app that helps people know what matters and take the next step."/>
   <meta property="og:url" content="https://meatverse.co/"/>
   <meta property="og:type" content="website"/>
   <meta property="og:site_name" content="MEATVerse"/>
@@ -15,8 +15,8 @@
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="MEATVerse — The Expanding World of MEAT"/>
-  <meta name="twitter:description" content="MEATVerse is the expanding world of MEAT — a connected ecosystem that goes beyond the app."/>
+  <meta name="twitter:title" content="MEATVerse — The Long-Term Vision for MEAT"/>
+  <meta name="twitter:description" content="A clearer look at where MEAT begins and what it may become."/>
   <meta name="twitter:image" content="https://meatverse.co/og-image.png"/>
   
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -241,6 +241,31 @@
     body.light-mode .persona-row strong { color:#2C3A28; }
 
   </style>
+  <style id="meat-app-theme">
+    :root{--app-bg:#fff8ef;--app-surface:#fffdf8;--app-ink:#572211;--app-muted:#7c6259;--app-hero:#70240d;--app-hero-glow:#b65b26;--app-accent:#e6b63f;--app-violet:#7859c7;--app-border:rgba(87,34,17,.18)}
+    html[data-meat-theme="violet"]{--app-bg:#fbf8ff;--app-surface:#fffaff;--app-ink:#301647;--app-muted:#715f7b;--app-hero:#45205c;--app-hero-glow:#7551a1;--app-accent:#d8b14b;--app-violet:#7957c7;--app-border:rgba(48,22,71,.18)} html[data-meat-theme="forest"]{--app-bg:#f7fbf4;--app-surface:#fdfffb;--app-ink:#173b2f;--app-muted:#5f736b;--app-hero:#1e513c;--app-hero-glow:#42765a;--app-accent:#e3b64a;--app-violet:#7656ba;--app-border:rgba(23,59,47,.18)} html[data-meat-theme="night"]{--app-bg:#17100c;--app-surface:#241912;--app-ink:#fff8ef;--app-muted:#d6c5ba;--app-hero:#4f1c0c;--app-hero-glow:#8c421f;--app-accent:#e6b63f;--app-violet:#9b80e8;--app-border:rgba(255,248,239,.18)}
+    body,body.light-mode{background:var(--app-bg)!important;color:var(--app-ink)!important} nav,body.dark-mode nav{background:color-mix(in srgb,var(--app-surface) 94%,transparent)!important;border-color:var(--app-border)!important;backdrop-filter:blur(18px)} nav .nav-center-name,nav .nav-main-menu-btn,nav .nav-logo,nav .mode-toggle,nav .city-selector{color:var(--app-ink)!important;border-color:var(--app-border)!important} nav .nav-center-name strong,nav .nav-main-menu-btn:hover{color:var(--app-accent)!important}
+    .hero{max-width:none!important;margin:0!important;padding:72px var(--spacing-base) 96px!important;background:radial-gradient(circle at 80% 10%,var(--app-hero-glow),transparent 38%),linear-gradient(135deg,var(--app-hero),#3a1207)!important;color:#fff8ef!important}.hero h1,.hero h2,.hero-main,.hero-main[style],.hero-body,.hero [style*="color:#F7F3EC"],.hero [style*="color: #F7F3EC"]{color:#fff8ef!important}.hero em,.hero-eyebrow{color:var(--app-accent)!important}
+    .section,.section.beige{background:var(--app-bg)!important;color:var(--app-ink)!important;border-color:var(--app-border)!important}.section.dark,footer{background:linear-gradient(135deg,var(--app-hero),#321006)!important;color:#fff8ef!important;border-color:var(--app-accent)!important}.section.dark *,footer *{border-color:color-mix(in srgb,#fff8ef 22%,transparent)}.section.dark .section-title,footer .section-title{color:#fff8ef!important}.section-title,.section-desc,.section-eyebrow{color:var(--app-ink)!important}.section-eyebrow,.section.dark .section-eyebrow{color:var(--app-accent)!important}
+    .proof-box,.story-card,.process-step,.collab-card,.activity-item,.event-snapshot,.mission-block,.initiative-card,.form-box,.modal-content{background:var(--app-surface)!important;color:var(--app-ink)!important;border-color:var(--app-border)!important;border-radius:24px!important;box-shadow:0 12px 30px rgba(69,31,14,.07)}.form-group input,.form-group textarea,.form-group select{background:var(--app-surface)!important;color:var(--app-ink)!important;border-color:var(--app-border)!important;border-radius:16px!important}.btn,.nav-btn,.hero-cta,.btn-enter,.btn-gold{background:var(--app-accent)!important;color:var(--app-ink)!important;border-color:var(--app-accent)!important;border-radius:999px!important}.btn:hover,.nav-btn:hover,.hero-cta:hover,.btn-enter:hover,.btn-gold:hover{background:var(--app-violet)!important;color:#fff!important;border-color:var(--app-violet)!important}
+    .meat-theme-picker{position:relative;right:auto;bottom:auto;z-index:1000;font-family:'Jost',sans-serif}.meat-theme-button{display:flex;align-items:center;gap:9px;border:1px solid var(--app-border);border-radius:999px;background:var(--app-surface);color:var(--app-ink);padding:10px 14px;box-shadow:0 10px 25px rgba(49,21,9,.16);font:600 12px 'Jost',sans-serif;cursor:pointer}.meat-theme-dot{width:12px;height:12px;border-radius:50%;background:var(--app-accent);box-shadow:0 0 0 3px var(--app-bg)}.meat-theme-options{display:none;position:absolute;right:0;top:calc(100% + 10px);bottom:auto;width:190px;padding:10px;background:var(--app-surface);border:1px solid var(--app-border);border-radius:20px;box-shadow:0 16px 36px rgba(49,21,9,.2)}.meat-theme-picker.open .meat-theme-options{display:grid;gap:6px}.meat-theme-option{border:0;background:transparent;color:var(--app-ink);display:flex;align-items:center;gap:9px;padding:9px;border-radius:12px;font:500 12px 'Jost',sans-serif;text-align:left;cursor:pointer}.meat-theme-option:hover{background:var(--app-bg)}.meat-swatch{width:20px;height:20px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--app-border)}@media(max-width:700px){.meat-theme-picker{right:auto;bottom:auto}.meat-theme-button{padding:9px 12px}.hero{padding:58px 24px 68px!important}}
+  </style>
+<style id="meat-app-polish">
+  :root{--app-accent-text:#80600f}html[data-meat-theme="night"]{--app-accent-text:#e6b63f}html{scroll-behavior:smooth} body{background:var(--app-bg)!important} nav{box-shadow:0 8px 28px rgba(49,21,9,.08)}
+  nav button,nav summary,.nav-btn,.nav-main-menu-btn,.mode-toggle,.city-selector{border-radius:999px!important}.hero{position:relative;overflow:hidden;border-radius:0 0 44px 44px!important;box-shadow:0 20px 55px rgba(49,21,9,.13)}
+  .hero::after{content:"";position:absolute;inset:auto -18% -42% 46%;width:58vw;height:58vw;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--app-accent) 20%,transparent),transparent 68%);pointer-events:none}.section{border-radius:34px;margin:20px auto;max-width:1440px;overflow:hidden}.section>.container{position:relative;z-index:1}
+  .proof-box,.story-card,.process-step,.collab-card,.activity-item,.event-snapshot,.mission-block,.initiative-card,.form-box,.modal-content,.persona-card{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}.proof-box:hover,.story-card:hover,.process-step:hover,.collab-card:hover,.activity-item:hover,.event-snapshot:hover,.persona-card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(69,31,14,.12)!important;border-color:color-mix(in srgb,var(--app-accent) 58%,var(--app-border))!important}
+  .form-group input,.form-group textarea,.form-group select{min-height:52px;font-size:16px!important;padding:14px 16px!important}button,a,input,select,textarea{transition:background-color .22s ease,color .22s ease,border-color .22s ease,transform .22s ease,box-shadow .22s ease}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--app-violet)!important;outline-offset:3px!important}
+  .meat-welcome{display:flex;width:max-content;max-width:calc(100% - 32px);align-items:center;gap:10px;margin:0 auto 28px;padding:10px 16px;border:1px solid color-mix(in srgb,var(--app-accent) 55%,transparent);border-radius:999px;background:color-mix(in srgb,var(--app-surface) 12%,transparent);color:#fff8ef;font:500 13px 'Jost',sans-serif;letter-spacing:.03em;backdrop-filter:blur(10px);position:relative;z-index:2}.meat-welcome-dot{width:9px;height:9px;border-radius:50%;background:var(--app-accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--app-accent) 16%,transparent)}
+  .meat-motion-toggle,.meat-text-toggle{border:1px solid var(--app-border);background:var(--app-surface);color:var(--app-ink);height:34px;min-width:34px;padding:0 9px;border-radius:999px;font:600 11px 'Jost',sans-serif;cursor:pointer}.meat-signoff{margin:28px auto 0!important;color:#fff8ef!important;font-family:'Cormorant Garamond',serif!important;font-size:clamp(20px,2.5vw,27px)!important;font-style:italic;opacity:1!important}
+  body.meat-motion-ready .meat-reveal{opacity:0;transform:translateY(18px)}body.meat-motion-ready .meat-reveal.meat-visible{opacity:1;transform:none;transition:opacity .55s ease,transform .55s ease}body.meat-large-text{font-size:112.5%}body.meat-reduced-motion *,body.meat-reduced-motion *::before,body.meat-reduced-motion *::after{scroll-behavior:auto!important;animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  #modeBtn{display:none!important}.persona-card{background:var(--app-surface)!important;color:var(--app-ink)!important;border-color:var(--app-border)!important;border-radius:24px!important;box-shadow:0 12px 30px rgba(69,31,14,.07)}.mission-block :is(h1,h2,h3,h4,p,span,div),.initiative-card :is(h1,h2,h3,h4,p,span,div),.persona-card :is(h1,h2,h3,h4,p,span,div),.modal-content :is(h1,h2,h3,h4,p,span,div){color:var(--app-ink)!important}.initiative-status,.initiative-link,.persona-tag,.section:not(.dark) .section-eyebrow{color:var(--app-accent-text)!important}.meat-theme-option[aria-checked="true"]{background:var(--app-bg);font-weight:700}
+  .section:not(.dark) [style*="rgba(247,243,236"],.section:not(.dark) [style*="color:var(--cream)"],.section:not(.dark) [style*="color: var(--cream)"],.section:not(.dark) [style*="color:#F7F3EC"],.section:not(.dark) [style*="color: #F7F3EC"]{color:var(--app-ink)!important}.section:not(.dark) [style*="color:#E8C66B"],.section:not(.dark) [style*="color: #E8C66B"]{color:var(--app-accent-text)!important}#life-companion{background:var(--app-surface)!important;border-color:var(--app-border)!important;border-radius:24px!important;box-shadow:0 12px 30px rgba(69,31,14,.07)}
+  @media(max-width:700px){.section{border-radius:26px;margin:12px 8px}.hero{border-radius:0 0 30px 30px!important}.nav-utils{gap:5px!important;right:8px!important}.city-selector{display:none!important}.meat-theme-name,.mode-label,.meat-control-label{display:none}.meat-theme-button{padding:8px 10px!important}.meat-welcome{font-size:11px;margin-bottom:20px}.form-group input,.form-group textarea,.form-group select{min-height:56px}.hero-cta,.nav-btn,.btn{min-height:48px!important}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}}
+</style>
+<style id="meat-next-card-style">
+  .meat-next-panel{margin:20px auto;max-width:920px;padding:0 20px}.meat-next-card{background:var(--app-surface);color:var(--app-ink);border:1px solid var(--app-border);border-radius:28px;padding:34px clamp(24px,5vw,52px);box-shadow:0 16px 38px rgba(69,31,14,.09);text-align:center}.meat-next-kicker{margin:0 0 12px;color:var(--app-accent-text);font:700 11px 'Jost',sans-serif;letter-spacing:.25em;text-transform:uppercase}.meat-next-title{margin:0;font:600 clamp(28px,4vw,43px)/1.08 'Cormorant Garamond',serif;color:var(--app-ink)}.meat-next-copy{max-width:590px;margin:15px auto 0;color:var(--app-muted);font:400 16px/1.75 'Jost',sans-serif}.meat-next-note{margin:16px auto 0;color:var(--app-accent-text);font:600 13px/1.5 'Jost',sans-serif}.meat-next-cta{display:inline-flex;align-items:center;justify-content:center;min-height:48px;margin-top:24px;padding:0 24px;border-radius:999px;background:var(--app-accent);color:var(--app-ink)!important;font:700 12px 'Jost',sans-serif;letter-spacing:.13em;text-decoration:none;text-transform:uppercase}.meat-next-cta:hover{background:var(--app-violet);color:#fff!important}@media(max-width:700px){.meat-next-panel{margin:12px 8px;padding:0}.meat-next-card{border-radius:24px;padding:30px 22px}.meat-next-copy{font-size:15px}}
+</style>
 </head>
 <body>
 
@@ -249,17 +274,17 @@
 <input id="verseMenuToggle" type="checkbox" aria-hidden="true" tabindex="-1"/>
 <nav>
   <a class="nav-corner-brand" href="https://meatverse.co/" aria-label="MEATVerse home">
-    <img src="meat-logo-gold.png" alt=""/>
+    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20x='4'%20y='4'%20width='92'%20height='92'%20rx='18'%20fill='%23fff8ef'%20stroke='%23d9ad43'%20stroke-width='3'/%3E%3Cpath%20d='M22%2075V25l28%2031%2028-31v50'%20fill='none'%20stroke='%23c89528'%20stroke-width='9'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3Cpath%20d='M35%2075V53M65%2075V53M35%2064h30'%20fill='none'%20stroke='%238f6919'%20stroke-width='4'/%3E%3C/svg%3E" alt=""/>
   </a>
   <div class="nav-utils">
     <button class="mode-toggle" onclick="toggleDarkMode()" id="modeBtn" style="padding:6px 10px;font-size:11px;">🌙 Dark</button>
   </div>
 
   <div class="nav-center">
-    <img class="nav-center-m" src="meat-logo-gold.png" alt="MEATVerse"/>
+    <img class="nav-center-m" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20x='4'%20y='4'%20width='92'%20height='92'%20rx='18'%20fill='%23fff8ef'%20stroke='%23d9ad43'%20stroke-width='3'/%3E%3Cpath%20d='M22%2075V25l28%2031%2028-31v50'%20fill='none'%20stroke='%23c89528'%20stroke-width='9'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3Cpath%20d='M35%2075V53M65%2075V53M35%2064h30'%20fill='none'%20stroke='%238f6919'%20stroke-width='4'/%3E%3C/svg%3E" alt="MEATVerse"/>
     <p class="nav-center-name">MEAT<strong>Verse</strong></p>
     <label class="nav-main-menu-btn" for="verseMenuToggle" role="button" tabindex="0" aria-label="Open menu">Menu</label>
-    <button class="btn-enter" style="margin-top:0;padding:12px 28px;font-size:14px;min-height:44px;" onclick="document.getElementById('what-is').scrollIntoView({behavior:'smooth'})">Enter MEATVerse ↓</button>
+    <button class="btn-enter" style="margin-top:0;padding:12px 28px;font-size:14px;min-height:44px;" onclick="document.getElementById('what-is').scrollIntoView({behavior:'smooth'})">See the Vision ↓</button>
   </div>
 </nav>
 
@@ -300,73 +325,68 @@ function closeMvMobileNav(){
 </script>
 
 <div class="hero">
-  <p class="hero-eyebrow">Welcome to</p>
+  <p class="hero-eyebrow">The Long-Term Vision</p>
   <h1 class="hero-main" style="color:#F7F3EC;">MEAT<em>Verse</em></h1>
-  <p class="hero-body">The connected world of MEAT.<br>Built around real people, real life, and real progress. 💚</p>
-  <p style="font-size:12px;letter-spacing:.08em;color:var(--muted);margin-top:24px;">Connect · Plan · Move · Fuel · Grow · Make Impact</p>
-  <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--cream);line-height:1.6;margin-top:18px;max-width:440px;margin-left:auto;margin-right:auto;">MEAT is an action platform built to change the way people move, meet, plan, and execute.</p>
+  <p class="hero-body">MEATVerse is the connected direction of MEAT—beginning with a simple app that helps people see what matters, take the next step, and make room for life.</p>
   <p style="font-family:'Jost',sans-serif;font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#E8C66B;margin-top:10px;">Make Every Action Count.</p>
-  <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--cream);line-height:1.6;margin-top:16px;max-width:440px;margin-left:auto;margin-right:auto;">MEAT brings connection, opportunity, and action into one place — so people can meet the right people, work toward what matters, and complete what they started.</p>
-  <p style="font-size:12.5px;color:#E8C66B;text-align:center;line-height:1.6;margin-top:10px;font-style:italic;">MEAT helps turn intention into movement.</p>
-  <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:14px;color:var(--cream);text-align:center;margin-top:10px;">Don't just scroll through life. Go live it.</p>
-  <p style="font-size:13px;color:var(--muted);text-align:center;line-height:1.7;margin-top:8px;max-width:440px;margin-left:auto;margin-right:auto;">MEAT helps people discover what matters, connect with the right people, go do something, and complete what they started.</p>
-  <button class="btn-enter" style="margin-top:20px;" onclick="document.getElementById('what-is').scrollIntoView({behavior:'smooth'})">Enter MEATVerse ↓</button>
+  <p style="font-size:13px;color:var(--muted);text-align:center;line-height:1.7;margin-top:18px;max-width:520px;margin-left:auto;margin-right:auto;">MEATVerse is being built. This page shares the direction—not a list of features available today.</p>
+  <button class="btn-enter" style="margin-top:24px;" onclick="document.getElementById('what-is').scrollIntoView({behavior:'smooth'})">See What We're Building ↓</button>
 </div>
 
-
+<section class="meat-next-panel" aria-labelledby="meat-next-title">
+  <div class="meat-next-card">
+    <p class="meat-next-kicker">MEAT Next</p>
+    <h2 class="meat-next-title" id="meat-next-title">One meaningful next step at a time.</h2>
+    <p class="meat-next-copy">MEAT is built to make the next step feel clear, simple, and yours—without pressure to have everything figured out.</p>
+    <p class="meat-next-note">Your choices stay yours.</p>
+    <a class="meat-next-cta" href="https://meathospitalitygroup.com/#waitlist" target="_blank" rel="noopener">Become a Meatie</a>
+  </div>
+</section>
 
 <!-- SECTION 1: WHAT IS MEATVERSE -->
 <div id="what-is" class="section beige">
   <div class="container">
     <p class="section-eyebrow">What Is MEATVerse?</p>
-    <h2 class="section-title">More than an app.<br>A world built around your life.</h2>
-    <p class="section-desc">MEATVerse connects the tools, people, communities, experiences, and opportunities that help you move through life and toward what matters to you.</p>
+    <h2 class="section-title">One app today.<br>A more connected future.</h2>
+    <p class="section-desc">MEATVerse is the long-term vision for how the MEAT App, community, and real-world opportunities may connect over time.</p>
 
     <div style="max-width:600px;margin:32px 0 0;padding:28px 30px;border:1px solid rgba(44,58,40,0.15);text-align:left;background:rgba(255,255,255,0.4);">
-      <p style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#E8C66B;margin-bottom:12px;text-align:center;">The MEATVerse, in One Breath</p>
-      <p style="font-size:14px;color:rgba(44,58,40,0.75);line-height:1.85;">MEATVerse is the expanding world of MEAT — a connected ecosystem that goes beyond the app to bring people closer to communities, experiences, opportunities, tools, and real-life progress. It's not a virtual world. It's a broader way to access everything MEAT can become.</p>
+      <p style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#E8C66B;margin-bottom:12px;text-align:center;">The Idea, Clearly</p>
+      <p style="font-size:14px;color:rgba(44,58,40,0.75);line-height:1.85;">Begin with one useful promise: help people know what matters and take the next meaningful step. Then grow carefully—guided by real use, honest feedback, and what genuinely helps people move forward.</p>
     </div>
 
-    <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:clamp(16px,2.2vw,19px);color:var(--cream);max-width:600px;margin:32px 0 0;line-height:1.6;">The app helps you move through your day.<br>MEATVerse connects you to everything that can help you move further.</p>
+    <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:clamp(16px,2.2vw,19px);color:var(--cream);max-width:600px;margin:32px 0 0;line-height:1.6;">The MEAT App is the starting point.<br>MEATVerse is the direction it can grow.</p>
   </div>
 </div>
 
 <!-- SECTION 2: YOUR MEATVERSE -->
 <div id="your-meatverse" class="section">
   <div class="container">
-    <p class="section-eyebrow">Personalized</p>
-    <h2 class="section-title">Your MEATVerse</h2>
-    <p class="section-desc">No two MEATVerses should look the same. What you see depends on your goals, interests, routines, progress, people, and where you are in life.</p>
+    <p class="section-eyebrow">Built Around People</p>
+    <h2 class="section-title">Personal by choice.</h2>
+    <p class="section-desc">MEAT should adapt to people—not ask people to adapt to it. Personalization should be useful, understandable, and optional.</p>
 
     <div class="persona-grid">
       <div class="persona-card">
-        <p class="persona-name">Holden</p>
-        <p class="persona-tag">Building a Business</p>
-        <p class="persona-row"><strong>Today:</strong> First Steps toward his business plan</p>
-        <p class="persona-row"><strong>People:</strong> Connected with someone else building</p>
-        <p class="persona-row"><strong>Next:</strong> A mentor conversation feels right</p>
+        <p class="persona-name">Your priorities</p>
+        <p class="persona-tag">See What Matters</p>
+        <p class="persona-row">Keep the important parts of your day visible without turning life into a wall of noise.</p>
       </div>
       <div class="persona-card">
-        <p class="persona-name">Justin</p>
-        <p class="persona-tag">Training For a Race</p>
-        <p class="persona-row"><strong>Today:</strong> Tracking mileage and recovery progress</p>
-        <p class="persona-row"><strong>People:</strong> A small group of fellow runners</p>
-        <p class="persona-row"><strong>Next:</strong> A rest day check-in feels right</p>
+        <p class="persona-name">Your pace</p>
+        <p class="persona-tag">Move Your Way</p>
+        <p class="persona-row">Choose what helps, turn off what does not, and change your setup as your life changes.</p>
       </div>
       <div class="persona-card">
-        <p class="persona-name">Joseph</p>
-        <p class="persona-tag">Reconnecting With Friends</p>
-        <p class="persona-row"><strong>Today:</strong> A MEATing to call an old friend</p>
-        <p class="persona-row"><strong>People:</strong> Connecting with someone nearby</p>
-        <p class="persona-row"><strong>Next:</strong> Trying something new feels right</p>
+        <p class="persona-name">Your privacy</p>
+        <p class="persona-tag">You Stay in Control</p>
+        <p class="persona-row">Choices should begin privately and only become visible when you deliberately decide to share them.</p>
       </div>
     </div>
 
     <div style="max-width:700px;margin:56px auto 0;">
-      <p style="text-align:center;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:#E8C66B;margin:40px 0 16px;">MEAT Grows As You Grow</p>
-    <p style="text-align:center;font-size:14.5px;color:var(--muted);max-width:600px;margin:0 auto;line-height:1.9;">Most apps recommend the same thing forever. MEAT doesn't define you by who you were when you signed up. It evolves with who you're becoming.</p>
-
-    <p style="font-size:14px;color:var(--muted);text-align:center;margin-top:20px;line-height:1.85;max-width:560px;margin-left:auto;margin-right:auto;">There for the milestones, and everything in between.</p>
+      <p style="text-align:center;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:#E8C66B;margin:40px 0 16px;">Designed to Evolve</p>
+    <p style="text-align:center;font-size:14.5px;color:var(--muted);max-width:600px;margin:0 auto;line-height:1.9;">As people change, their choices can change with them. MEAT is being designed to respect that growth without deciding who someone should be.</p>
     </div>
   </div>
 </div>
@@ -375,17 +395,17 @@ function closeMvMobileNav(){
 <!-- SECTION 3: LIVE YOUR DAY -->
 <div id="live-your-day" class="section beige">
   <div class="container">
-    <p class="section-eyebrow">Live Your Day</p>
-    <h2 class="section-title">The practical side of MEAT.</h2>
-    <p class="section-desc">First Steps — what moves you forward, one day at a time.</p>
+    <p class="section-eyebrow">Where It Begins</p>
+    <h2 class="section-title">The MEAT App.</h2>
+    <p class="section-desc">The practical starting point: see your day at a glance, know what comes next, and count the progress you make.</p>
 
 
     <p style="text-align:center;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:#E8C66B;margin:40px 0 12px;">If Life Gets in the Way</p>
-    <p style="font-size:13.5px;color:rgba(247,243,236,0.75);text-align:center;max-width:560px;margin:0 auto;line-height:1.85;">Yesterday's task doesn't just disappear. Keep it today, move it, break it smaller, mark it complete, or drop it. Accountability without shaming.</p>
+    <p style="font-size:13.5px;color:rgba(247,243,236,0.75);text-align:center;max-width:560px;margin:0 auto;line-height:1.85;">The current rough draft keeps unfinished MEATs visible so they can be completed, moved, or set aside deliberately. Accountability without shame.</p>
 
     <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:18px;color:var(--cream);text-align:center;margin-top:32px;">Not daily minutes spent in MEAT. Daily lives moved by MEAT.</p>
 
-    <p style="font-size:13.5px;color:rgba(247,243,236,0.75);text-align:center;margin-top:24px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.85;">Instagram says look at everybody else. TikTok says keep watching. MEAT says: <strong style="color:var(--cream);">"Hey, what are you up to today?"</strong> And then actually helps.</p>
+    <p style="font-size:13.5px;color:rgba(247,243,236,0.75);text-align:center;margin-top:24px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.85;">The goal is not to keep people inside another app. It is to help them understand their day, take action, and return to their life.</p>
 
     <p style="font-size:15px;color:var(--cream);text-align:center;margin-top:24px;font-style:italic;">MEAT helps you remember your life, organize your life, and actually live it.</p>
 
@@ -396,8 +416,8 @@ function closeMvMobileNav(){
 
     <div id="life-companion" style="max-width:600px;margin:32px auto 0;padding:32px 28px;border:1px solid rgba(44,58,40,0.15);text-align:left;">
       <p style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(19px,2.6vw,22px);color:var(--cream);margin-bottom:16px;text-align:center;">A <em style="font-style:italic;color:#E8C66B;">Companion</em> For Your Life</p>
-      <p style="font-size:14px;color:rgba(247,243,236,0.75);line-height:1.85;margin-bottom:14px;">MEAT checks in with you, helps you reflect on your day, keeps unfinished things from disappearing, and helps you think about what comes next.</p>
-      <p style="font-size:14px;color:rgba(247,243,236,0.75);line-height:1.85;">Tell MEAT how you're feeling, what matters tomorrow, and where you want to move forward.</p>
+      <p style="font-size:14px;color:rgba(247,243,236,0.75);line-height:1.85;margin-bottom:14px;">The current rough draft organizes Daily MEATs, highlights progress, and keeps unfinished items from being forgotten.</p>
+      <p style="font-size:14px;color:rgba(247,243,236,0.75);line-height:1.85;">It is being refined through real use before it is placed in more people's hands.</p>
       <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:15px;color:#E8C66B;text-align:center;margin-top:16px;">MEAT doesn't need to run your life. It helps you stay connected to it.</p>
     </div>
   </div>
@@ -408,10 +428,10 @@ function closeMvMobileNav(){
 <!-- SECTION 7: FINAL CTA -->
 <div class="section dark">
   <div class="container">
-    <p class="section-eyebrow" style="text-align:center;">Your Life Is Already Happening</p>
-    <h2 class="section-title" style="text-align:center;">MEATVerse helps you participate in more of it.</h2>
+    <p class="section-eyebrow" style="text-align:center;">Start With the App</p>
+    <h2 class="section-title" style="text-align:center;">Help shape what MEAT becomes.</h2>
 
-    <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:clamp(18px,2.4vw,22px);color:var(--cream);text-align:center;max-width:560px;margin:48px auto 0;line-height:1.7;">MEATVerse should feel expansive when you explore it, but simple when you use it.</p>
+    <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:clamp(18px,2.4vw,22px);color:var(--cream);text-align:center;max-width:560px;margin:48px auto 0;line-height:1.7;">MEATVerse is the long-term direction. The MEAT App is the first real step.</p>
 
     <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:clamp(15px,2vw,17px);color:var(--cream);text-align:center;max-width:480px;margin:24px auto 0;line-height:1.6;">Open → see what matters → take action → check it off → see what's next.</p>
 
@@ -420,27 +440,27 @@ function closeMvMobileNav(){
     </div>
 
     <div style="text-align:center;margin-top:48px;">
-      <button class="btn-enter" onclick="document.getElementById('what-is').scrollIntoView({behavior:'smooth'})">Enter MEATVerse ↓</button>
+      <a class="btn-enter" href="https://meathospitalitygroup.com/#waitlist" target="_blank" rel="noopener">Get Early Access to MEAT →</a>
     </div>
   </div>
 </div>
 
 <footer>
   <div style="margin-bottom:24px;">
-    <img src="meat-logo-gold.png" alt="" style="height:64px;width:64px;object-fit:contain;opacity:0.7;"/>
+    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20x='4'%20y='4'%20width='92'%20height='92'%20rx='18'%20fill='%23fff8ef'%20stroke='%23d9ad43'%20stroke-width='3'/%3E%3Cpath%20d='M22%2075V25l28%2031%2028-31v50'%20fill='none'%20stroke='%23c89528'%20stroke-width='9'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3Cpath%20d='M35%2075V53M65%2075V53M35%2064h30'%20fill='none'%20stroke='%238f6919'%20stroke-width='4'/%3E%3C/svg%3E" alt="" style="height:64px;width:64px;object-fit:contain;opacity:0.7;"/>
   </div>
   <h2 class="section-title">One mission. One sky. All directions.</h2>
-  <p>From one person seeing something beautiful die, to an entire ecosystem being built. That's the MEATVerse. That's what happens when you refuse to accept that good ideas should disappear.</p>
+  <p>MEATVerse grows from a simple belief: good ideas should have somewhere to begin, and people should have practical tools to keep moving.</p>
   <p style="margin-top:28px;"><strong>Start somewhere. The app. Create your own thing. It all feeds the same mission.</strong></p>
   <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:clamp(20px,2.8vw,26px);color:var(--cream);margin-top:24px;">Let's MEAT.</p>
   <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:14px;color:#E8C66B;margin-top:16px;">MEAT — life organization as easy as MEATing. 💚</p>
   <p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,236,.8);line-height:2;margin-top:20px;">Quality with purpose.<br>Priced for real life.<br>Built for people who keep going.</p>
   <div class="social-links">
-    <a href="https://meathospitalitygroup.com" target="_blank">MEAT Hospitality Group</a>
-    <a href="https://meatempire.net" target="_blank">MEAT Empire</a>
-    <a href="https://storemhg.com" target="_blank">MEAT Hospitality Group Store</a>
-    <a href="https://instagram.com/meathospitalitygroup" target="_blank">Instagram</a>
-    <a href="https://twitter.com/MEATEmpire19" target="_blank">Twitter</a>
+    <a href="https://meathospitalitygroup.com" target="_blank" rel="noopener">MEAT Hospitality Group</a>
+    <a href="https://meatempire.net" target="_blank" rel="noopener">MEAT Empire</a>
+    <a href="https://storemhg.com" target="_blank" rel="noopener">MEAT Hospitality Group Store</a>
+    <a href="https://instagram.com/meathospitalitygroup" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://twitter.com/MEATEmpire19" target="_blank" rel="noopener">Twitter</a>
     <a href="mailto:holdenkrivelin@meatapp.tech">Email</a>
     <a href="tel:6462341182">(646) 234-1182</a>
   </div>
@@ -453,8 +473,8 @@ function closeMvMobileNav(){
 
   <div class="footer-empire-callout">
     <p class="footer-empire-label">Powered By</p>
-    <a href="https://meatempire.net" target="_blank" class="footer-empire-title">MEAT Empire →</a>
-    <p class="footer-empire-desc">The network and tools for creators, helping shape what gets built next — for MEAT or for you.</p>
+    <a href="https://meatempire.net" target="_blank" rel="noopener" class="footer-empire-title">MEAT Empire →</a>
+    <p class="footer-empire-desc">An early creator-focused concept for turning an idea into a clear first test.</p>
   </div>
 </footer>
 
@@ -497,5 +517,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+<script>
+(() => {const key='meat-app-color-theme', names={sunrise:'Sunrise',violet:'Violet',forest:'Forest',night:'Night'}; const saved=localStorage.getItem(key)||'sunrise'; document.documentElement.dataset.meatTheme=saved; const picker=document.createElement('div'); picker.className='meat-theme-picker'; picker.innerHTML=`<button class="meat-theme-button" type="button" aria-expanded="false"><span class="meat-theme-dot"></span><span class="meat-theme-name">${names[saved]}</span></button><div class="meat-theme-options" role="menu"><button class="meat-theme-option" data-theme="sunrise"><span class="meat-swatch" style="background:#e6b63f"></span>Sunrise</button><button class="meat-theme-option" data-theme="violet"><span class="meat-swatch" style="background:#7957c7"></span>Violet</button><button class="meat-theme-option" data-theme="forest"><span class="meat-swatch" style="background:#1e513c"></span>Forest</button><button class="meat-theme-option" data-theme="night"><span class="meat-swatch" style="background:#17100c"></span>Night</button></div>`; document.body.appendChild(picker); const toggle=picker.querySelector('.meat-theme-button'); toggle.addEventListener('click',()=>{picker.classList.toggle('open');toggle.setAttribute('aria-expanded',picker.classList.contains('open'))}); picker.querySelectorAll('[data-theme]').forEach(button=>button.addEventListener('click',()=>{const theme=button.dataset.theme;document.documentElement.dataset.meatTheme=theme;localStorage.setItem(key,theme);picker.querySelector('.meat-theme-name').textContent=names[theme];picker.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));})();
+</script>
+<script>document.addEventListener('DOMContentLoaded',()=>{const picker=document.querySelector('.meat-theme-picker'),nav=document.querySelector('.nav-utils');if(picker&&nav)nav.appendChild(picker);});</script>
+<script id="meat-app-polish-script">
+document.addEventListener('DOMContentLoaded',()=>{const body=document.body,hero=document.querySelector('.hero'),nav=document.querySelector('.nav-utils'),footer=document.querySelector('footer'),hour=new Date().getHours();const greeting=hour<12?'Good morning':hour<17?'Good afternoon':'Good evening';if(hero&&!hero.querySelector('.meat-welcome')){const welcome=document.createElement('div');welcome.className='meat-welcome';welcome.innerHTML='<span class="meat-welcome-dot"></span><span>'+greeting+'. Your next step starts here.</span>';hero.insertBefore(welcome,hero.firstElementChild)}if(nav&&!document.querySelector('.meat-motion-toggle')){const motion=document.createElement('button');motion.type='button';motion.className='meat-motion-toggle';motion.setAttribute('aria-label','Toggle reduced motion');motion.title='Reduce motion';motion.innerHTML='◌<span class="meat-control-label"> Motion</span>';const reduced=localStorage.getItem('meat-reduced-motion')==='true'||matchMedia('(prefers-reduced-motion: reduce)').matches;body.classList.toggle('meat-reduced-motion',reduced);motion.setAttribute('aria-pressed',String(reduced));motion.addEventListener('click',()=>{const next=!body.classList.contains('meat-reduced-motion');body.classList.toggle('meat-reduced-motion',next);localStorage.setItem('meat-reduced-motion',String(next));motion.setAttribute('aria-pressed',String(next))});nav.appendChild(motion)}if(nav&&!document.getElementById('a11yToggle')){const text=document.createElement('button');text.type='button';text.className='meat-text-toggle';text.textContent='Aa';text.setAttribute('aria-label','Toggle larger text');text.addEventListener('click',()=>{const next=!body.classList.contains('meat-large-text');body.classList.toggle('meat-large-text',next);localStorage.setItem('meat-large-text',String(next));text.setAttribute('aria-pressed',String(next))});const large=localStorage.getItem('meat-large-text')==='true';body.classList.toggle('meat-large-text',large);text.setAttribute('aria-pressed',String(large));nav.appendChild(text)}if(footer&&!footer.querySelector('.meat-signoff')){const signoff=document.createElement('p');signoff.className='meat-signoff';signoff.textContent='Come as you are. Keep moving forward.';footer.appendChild(signoff)}const targets=[...document.querySelectorAll('.section,.proof-box,.story-card,.process-step,.collab-card,.activity-item,.event-snapshot,.persona-card')];if(!body.classList.contains('meat-reduced-motion')&&'IntersectionObserver'in window){body.classList.add('meat-motion-ready');targets.forEach(el=>el.classList.add('meat-reveal'));const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('meat-visible');observer.unobserve(entry.target)}}),{threshold:.08});targets.forEach(el=>observer.observe(el))}else targets.forEach(el=>el.classList.add('meat-visible'))});
+</script>
+<script id="meat-site-audit-fixes">
+document.addEventListener('DOMContentLoaded',()=>{document.body.classList.remove('light-mode','dark-mode');localStorage.removeItem('meatverse-theme');const logo='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="4" y="4" width="92" height="92" rx="18" fill="#fff8ef" stroke="#d9ad43" stroke-width="3"/><path d="M22 75V25l28 31 28-31v50" fill="none" stroke="#c89528" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 75V53M65 75V53M35 64h30" fill="none" stroke="#8f6919" stroke-width="4"/></svg>');document.querySelectorAll('img[src="meat-logo-gold.png"]').forEach(img=>{img.src=logo});const picker=document.querySelector('.meat-theme-picker'),toggle=picker?.querySelector('.meat-theme-button'),options=picker?[...picker.querySelectorAll('[data-theme]')]:[];const sync=()=>options.forEach(o=>{const active=o.dataset.theme===document.documentElement.dataset.meatTheme;o.setAttribute('role','menuitemradio');o.setAttribute('aria-checked',String(active))});sync();options.forEach(o=>o.addEventListener('click',sync));document.addEventListener('click',e=>{if(picker&&!picker.contains(e.target)){picker.classList.remove('open');toggle?.setAttribute('aria-expanded','false')}});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&picker){picker.classList.remove('open');toggle?.setAttribute('aria-expanded','false');toggle?.focus()}})});
+</script>
 </body>
 </html>
