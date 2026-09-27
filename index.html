@@ -291,7 +291,13 @@
 .hero-body{max-width:700px!important;margin-left:auto!important;margin-right:auto!important}
 .hero [style*="font-size:12px"][style*="text-transform:uppercase"]{font-size:clamp(19px,3vw,28px)!important;text-transform:none!important;letter-spacing:.01em!important;color:#bcefff!important}
 </style>
-<style id="mhg-symbol-sizing">.nav-corner-brand img,.nav-center-m,footer img,.hero-monogram{object-fit:contain!important;border-radius:12px;opacity:1!important}.nav-corner-brand img,.nav-center-m{min-width:40px;min-height:40px}.hero-monogram{width:120px!important;height:120px!important}footer img{width:80px!important;height:80px!important}</style></head>
+<style id="mhg-symbol-sizing">.nav-corner-brand img,.nav-center-m,footer img,.hero-monogram{object-fit:contain!important;border-radius:12px;opacity:1!important}.nav-corner-brand img,.nav-center-m{min-width:40px;min-height:40px}.hero-monogram{width:120px!important;height:120px!important}footer img{width:80px!important;height:80px!important}</style><style id="meatverse-header-rows-and-companion-contrast">
+  /* Mobile: move the colour controls onto their own row above the MEATVerse title so they never overlap */
+  @media(max-width:768px){nav .nav-utils{position:static!important;top:auto!important;right:auto!important;justify-content:center;flex-wrap:wrap;width:100%;margin:0 0 6px}}
+  /* Companion card body copy was hard-coded near-white; follow the active theme instead */
+  #life-companion p[style*="rgba(242,247,255"]{color:var(--app-muted)!important}
+</style>
+</head>
 <body>
 
 <input class="mv-theme-input" type="radio" name="meatverse-native-theme" id="mv-theme-electric" checked>
@@ -508,7 +514,7 @@ function scrollToMeatVerseVision(event) {
   <p>MEATVerse grows from a simple belief: good ideas should have somewhere to begin, and people should have practical tools to keep moving.</p>
   <p style="margin-top:28px;"><strong>Start somewhere. The app. Create your own thing. It all feeds the same mission.</strong></p>
   <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:clamp(20px,2.8vw,26px);color:var(--cream);margin-top:24px;">Make time for what matters to you.</p>
-  <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:14px;color:#63d7ff;margin-top:16px;">MEAT Life. Make time for what matters to you.</p>
+  <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;font-size:14px;color:#63d7ff;margin-top:16px;">MEAT Life. Small steps, more room for life.</p>
   <p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(242,247,255,.8);line-height:2;margin-top:20px;">Quality with purpose.<br>Priced for real life.<br>Built for people who keep going.</p>
   <div class="social-links">
     <a href="https://meathospitalitygroup.com" target="_blank" rel="noopener">MEAT Hospitality Group</a>
