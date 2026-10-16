@@ -290,11 +290,13 @@
   .mv-theme-label{font:600 10px 'Jost',sans-serif;letter-spacing:.08em;color:#f2f7ff}
   .mv-theme-choice{display:block;width:22px;height:22px;border:2px solid rgba(242,247,255,.7);border-radius:50%;cursor:pointer;box-shadow:0 0 0 0 transparent;transition:transform .18s ease,box-shadow .18s ease}
   .mv-theme-choice:active{transform:scale(.88)}
-  #mv-theme-electric:checked~nav label[for="mv-theme-electric"],#mv-theme-violet:checked~nav label[for="mv-theme-violet"],#mv-theme-forest:checked~nav label[for="mv-theme-forest"],#mv-theme-night:checked~nav label[for="mv-theme-night"]{box-shadow:0 0 0 3px #f2f7ff;transform:scale(1.08)}
+  #mv-theme-electric:checked~nav label[for="mv-theme-electric"],#mv-theme-violet:checked~nav label[for="mv-theme-violet"],#mv-theme-forest:checked~nav label[for="mv-theme-forest"],#mv-theme-night:checked~nav label[for="mv-theme-night"],#mv-theme-pop:checked~nav label[for="mv-theme-pop"]{box-shadow:0 0 0 3px #f2f7ff;transform:scale(1.08)}
   body:has(#mv-theme-electric:checked){--app-bg:#f2f7ff;--app-surface:#ffffff;--app-ink:#10234d;--app-muted:#4e6385;--app-hero:#1038b8;--app-hero-glow:#137be8;--app-accent:#63d7ff;--app-violet:#2454df;--app-border:rgba(24,75,164,.22);--app-accent-text:#1455b5}
   body:has(#mv-theme-violet:checked){--app-bg:#f4f8ff;--app-surface:#ffffff;--app-ink:#122b55;--app-muted:#52688c;--app-hero:#143e92;--app-hero-glow:#247ded;--app-accent:#6bdaff;--app-violet:#287bea;--app-border:rgba(18,43,85,.18);--app-accent-text:#1455b5}
   body:has(#mv-theme-forest:checked){--app-bg:#effaff;--app-surface:#ffffff;--app-ink:#103355;--app-muted:#496d86;--app-hero:#07559d;--app-hero-glow:#1399d5;--app-accent:#68e0ff;--app-violet:#2679de;--app-border:rgba(16,51,85,.18);--app-accent-text:#1455b5}
   body:has(#mv-theme-night:checked){--app-bg:#071326;--app-surface:#101f39;--app-ink:#f2f7ff;--app-muted:#c3d5f0;--app-hero:#102a68;--app-hero-glow:#1555b5;--app-accent:#63d7ff;--app-violet:#79b7ff;--app-border:rgba(242,247,255,.18);--app-accent-text:#63d7ff}
+  body:has(#mv-theme-pop:checked){--app-bg:#140a1a;--app-surface:#221428;--app-ink:#ffffff;--app-muted:#e0b8d4;--app-hero:#FF2D95;--app-hero-glow:#FFD500;--app-accent:#00CFFF;--app-violet:#FF2D95;--app-border:rgba(255,45,149,.28);--app-accent-text:#FF2D95}
+  body:has(#mv-theme-pop:checked) .what-matters-brand__art{filter:hue-rotate(-70deg) saturate(1.5);}
   @media(max-width:700px){.mv-theme-label{display:none}.mv-theme-choice{width:19px;height:19px}.mv-theme-native{gap:4px}}
 </style>
 <style id="meat-electric-brand">
@@ -448,6 +450,7 @@ a.form-submit, a.meat-next-cta, a[class*="button"], a[class*="cta"], a.ticket-mi
 <input class="mv-theme-input" type="radio" name="meatverse-native-theme" id="mv-theme-violet">
 <input class="mv-theme-input" type="radio" name="meatverse-native-theme" id="mv-theme-forest">
 <input class="mv-theme-input" type="radio" name="meatverse-native-theme" id="mv-theme-night">
+<input class="mv-theme-input" type="radio" name="meatverse-native-theme" id="mv-theme-pop" aria-label="Pop art theme">
 <div class="site-theme-backdrop" aria-hidden="true"></div>
 
 <div class="progress-bar" id="progressBar"></div>
@@ -465,6 +468,7 @@ a.form-submit, a.meat-next-cta, a[class*="button"], a[class*="cta"], a.ticket-mi
       <label class="mv-theme-choice" for="mv-theme-violet" title="Azure" aria-label="Azure theme" style="background:#287bea"></label>
       <label class="mv-theme-choice" for="mv-theme-forest" title="Ocean" aria-label="Ocean theme" style="background:#07559d"></label>
       <label class="mv-theme-choice" for="mv-theme-night" title="Night" aria-label="Night theme" style="background:#071326"></label>
+      <label class="mv-theme-choice" for="mv-theme-pop" title="Pop" aria-label="Pop art theme" style="background:linear-gradient(135deg,#FF2D95 0%,#FFD500 55%,#00CFFF 100%)"></label>
     </div>
     <button class="mode-toggle" onclick="toggleDarkMode()" id="modeBtn" style="padding:6px 10px;font-size:11px;">🌙 Dark</button>
   </div>
